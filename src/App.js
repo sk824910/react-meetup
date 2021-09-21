@@ -3,6 +3,8 @@ import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
 import FavoritesPage from "./pages/Favorites";
 import Layout from "./components/layout/Layout";
+import Login from "./pages/Login";
+import { ModalExample } from "./pages/ModalPage";
 
 function App() {
 
@@ -21,6 +23,12 @@ function App() {
         </Route>
         <Route path="/favorites">
           <FavoritesPage />
+        </Route>
+        <Route path="/modalpage">
+          <ModalExample />
+        </Route>
+        <Route  path="/loginpage">
+          <Login/>
         </Route>
       </Switch>
     </Layout>
