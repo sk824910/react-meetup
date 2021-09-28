@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Modal from "react-modal";
 import styled from "styled-components";
 
@@ -66,21 +65,22 @@ export const TestButton = styled.div`
   cursor: pointer;
   background-color: green;
 `;
-const ModalShadow = styled.div`
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  background-color: black;
-  opacity: 0.7;
-  z-index: 4;
-`;
-const ModalBanner = styled.div`
-  margin-bottom: 20px;
-  background-color: blue;
-  color: white;
-  padding: 10px;
-`;
+// const ModalShadow = styled.div`
+//   position: fixed;
+//   height: 100%;
+//   width: 100%;
+//   top: 0px;
+//   background-color: black;
+//   opacity: 0.7;
+//   z-index: 4;
+// `;
+// const ModalBanner = styled.div`
+//   margin-bottom: 20px;
+//   background-color: blue;
+//   color: white;
+//   padding: 10px;
+// `;
+
 const Input = styled.input`
   text-align: right;
   width: 200px;
@@ -124,7 +124,7 @@ export function ModalExample(props) {
         <ConfirmButton onClick={closeModal}>close</ConfirmButton>
         <ModalStyle>I am a modal</ModalStyle>
         <form>
-          <input />
+          <Input />
           <ConfirmButton>tab navigation</ConfirmButton>
           <CloseButton onClick={closeModal}>stays</CloseButton>
           <TestButton>inside</TestButton>
