@@ -1,5 +1,4 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+
 import firebase from "firebase";
 
 
@@ -87,16 +86,6 @@ const logout = () => {
   auth.signOut();
 };
 
-export {
-    auth,
-    db,
-    signInWithEmailAndPassword,
-    signInWithGoogle,
-    registerWithEmailAndPassword,
-    sendPasswordResetEmail,
-    logout,
-    firebaseConfig
-};
 
 
 
@@ -106,3 +95,15 @@ const auth = app.auth();
 const db = app.firestore();
 
 const googleProvider = new firebase.auth.GoogleAuthProvider();
+
+
+export {
+  auth,
+  db,
+  signInWithEmailAndPassword,
+  signInWithGoogle,
+  registerWithEmailAndPassword,
+  sendPasswordResetEmail,
+  logout,
+  firebaseConfig,
+};

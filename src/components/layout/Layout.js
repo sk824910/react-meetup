@@ -1,4 +1,3 @@
-import MainNavigation from './MainNavigation';
 import classes from './Layout.module.css';
 import Navbar from './Navbar';
 

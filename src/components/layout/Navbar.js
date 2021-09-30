@@ -31,7 +31,10 @@ const Navbar = () => {
             Modal Page
           </NavLink>
           <NavBtn>
-            <NavBtnLink to="/sign-up">Sign Up</NavBtnLink>
+            {/* <NavLink to="/loginpage" activeStyle>
+              Login
+            </NavLink> */}
+            <NavBtnLink to="/loginpage">Login</NavBtnLink>
           </NavBtn>
         </NavMenu>
       </Nav>
